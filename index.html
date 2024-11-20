@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog PDF</title>
+    <title>Katalog Promo</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #fdf2d0;
         }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
+        .container {
             text-align: center;
-            padding: 1rem;
+            padding: 20px;
         }
 
-        .pdf-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 60px);
-            background-color: #fff;
+        .header {
+            background-color: #FFD700;
+            padding: 10px;
+            border-bottom: 2px solid #FFA500;
         }
 
-        iframe {
-            width: 90%;
-            height: 90%;
-            border: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .image-container {
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 80%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Katalog Promo</h1>
-        <p>Periode: 28 November - 9 Desember 2024</p>
-    </header>
-    <div class="pdf-container">
-        <iframe src="UBUD.pdf" title="Katalog Promo"></iframe>
+    <div class="header">
+        <h1>Grand Opening 9th Store</h1>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="UBUD-1.jpg" alt="Katalog Halaman 1">
+        </div>
     </div>
 </body>
 </html>
